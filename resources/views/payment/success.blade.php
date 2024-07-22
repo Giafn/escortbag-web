@@ -12,6 +12,9 @@
       <div class="col-md-8 text-center">
         <div class="card">
           <div class="card-header bg-white text-dark">
+            <div class="d-flex justify-content-center mb-3">
+              <img src="/icon.jpeg" alt="escortbag" height="40">
+            </div>
             <h3>Payment Successful</h3>
           </div>
           <div class="card-body">
