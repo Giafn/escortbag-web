@@ -17,7 +17,10 @@
                     <hr>
                     <h5>Deskripsi</h5>
                     <div class="desc" style="max-height: 300px; overflow-y: auto;">
-                        <p>{!! $product->description !!}</p>
+                        @php
+                            $product->description = str_replace("\n", "<br>", $product->description);
+                        @endphp
+                        {!! $product->description !!}
                     </div>
                     <form action="" method="post">
                         @csrf
