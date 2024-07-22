@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <h2>Item Details</h2>
             <div class="card bg-white">
-                <div class="card-body row">
+                <div class="card-body row align-items-center">
                     <div class="col-md-6">
                         @if ($item->image)
                         <img src="{{ asset($item->image) }}" class="img-fluid" alt="{{ $item->nama }}">
@@ -20,6 +20,9 @@
                         <hr>
                         <p class="text">Description:</p>
                         <div style="max-height: 300px; overflow-y: auto;"> 
+                            @php
+                                $item->description = str_replace("\n", "<br>", $item->description);
+                            @endphp
                             {!! $item->description !!}
                         </div>
                         <hr>
