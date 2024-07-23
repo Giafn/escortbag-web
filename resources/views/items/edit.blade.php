@@ -25,6 +25,9 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="description">Description</label>
+                    @php
+                        $item->description = str_replace("\n", "<br>", $item->description);
+                    @endphp
                     <textarea class="form-control" id="description" name="description">{!! $item->description !!}</textarea>
                 </div>
                 <div class="form-group mb-3">
