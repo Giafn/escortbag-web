@@ -7,7 +7,7 @@
             <h2 class="text-center">Checkout</h2>
             <hr>
             <div class="row">
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-4">
                     <h4>Shipping Address</h4>
                     <form action="" method="post" id="checkoutForm">
                         @csrf
@@ -65,7 +65,7 @@
                         <h5 class="fw-bold">Total</h5>
                         <h5 class="fw-bold">Rp {{ number_format($subtotal) }}</h5>
                     </div>
-                    <button class="btn btn-dark d-block d-md-none float-end" onclick="document.getElementById('checkoutBtn').click()">Checkout</button>
+                    <button class="btn btn-dark d-block d-md-none float-end mt-3" onclick="document.getElementById('checkoutBtn').click()">Checkout</button>
             </div>
             
         </div>         
