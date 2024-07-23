@@ -7,7 +7,7 @@
             <h2 class="text-center">Checkout</h2>
             <hr>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <h4>Shipping Address</h4>
                     <form action="" method="post">
                         @csrf
