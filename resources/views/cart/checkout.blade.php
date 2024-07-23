@@ -23,7 +23,7 @@
                             <label for="phone" class="form-label">Phone<span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="phone" name="phone" required>
                         </div>
-                        <button type="submit" class="btn btn-dark">Checkout</button>
+                        <button type="submit" class="btn btn-dark d-md-block d-none">Checkout</button>
                     </form>
                 </div>
                 <div class="col-md-6">
@@ -65,6 +65,7 @@
                         <h5 class="fw-bold">Total</h5>
                         <h5 class="fw-bold">Rp {{ number_format($subtotal) }}</h5>
                     </div>
+                    <button class="btn btn-dark d-block d-md-none" onclick="document.querySelector('form').submit()">Checkout</button>
                 </div>
             </div>
             
