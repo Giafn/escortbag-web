@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <h4>Shipping Address</h4>
-                    <form action="" method="post">
+                    <form action="" method="post" id="checkoutForm">
                         @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
@@ -65,7 +65,7 @@
                         <h5 class="fw-bold">Total</h5>
                         <h5 class="fw-bold">Rp {{ number_format($subtotal) }}</h5>
                     </div>
-                    <button class="btn btn-dark d-block d-md-none" onclick="document.querySelector('form').submit()">Checkout</button>
+                    <button class="btn btn-dark d-block d-md-none" onclick="document.getElementById('checkoutForm').submit()">Checkout</button>
                 </div>
             </div>
             
